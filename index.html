@@ -1,1 +1,259 @@
-hello
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sebastian Melzer</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+			>
+			<link href="seb.css" rel="stylesheet">
+			<bibtex src="pubs.bib"></bibtex>
+			<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"
+			></script>
+			<script src="https://kit.fontawesome.com/20423277f1.js" crossorigin="anonymous"></script>
+		</head>
+		<div class="bibtex_template" style="display: none;">
+			<li>
+				<span class="author"></span>.
+				<b><span class="title"></span></b>.
+				<span class="if journal">
+					<i><span class="journal"></span></i>,<span class="if volume"> <span class="volume"></span>(<span class="number"></span>)<span class="if pages">:<span class="pages"></span></span>,</span>
+				</span>
+				<span class="if school"><span class="school"></span>,
+			</span>
+			<span class="year"></span>.
+			<span class="if note"><span class="note"></span>.</span>
+			<a class="url">(view)</a>
+		</li>
+	</div>
+	<body  data-bs-theme="light">
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<img class="img-thumbnail"src='images/seb.jpg' onmouseover="this.src='images/seb_simple.png';" onmouseout="this.src='images/seb.jpg';" />
+					</div>
+					<div class="col-9 align-self-center">
+						<h1>Sebastian Melzer</h1>
+						<h2>PhD Student</h2>
+						<p>
+							<a href="https://math.nmsu.edu/">
+								Department of Mathematical Sciences
+							</a>
+							<br />
+							<a href="https://nmsu.edu/">
+								New Mexico State University
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+			<div class="container">
+				<h3 id="aboutme"><span class="fa-solid fa-address-card"></span> About Me</h3>
+				<p>
+					I was born in Germany, and at 8 years old, I made the involuntary decision to move to the 
+					Netherlands for a change of scenery. After completing a bachelor’s in Computing Science and a 
+					master’s in Logic at the University of Amsterdam, I ventured further afield to pursue a PhD in 
+					Mathematics in Las Cruces, New Mexico. My research focuses on Priestley duality and pointfree 
+					topology, and I’m passionate about exploring the interactions between different branches of 
+					mathematics. I plan to continue in academia as a postdoctoral researcher after finishing my degree.
+				</p>
+				<p>
+					I’ve always loved rain and cool weather, so New Mexico’s arid climate might not have been the most 
+					logical choice, but it’s been an adventure. Outside of mathematics, I enjoy unwinding with video 
+					games, bad reality TV, or sports. I can never say no to chocolate-covered peanuts or a good beer.
+				</p>
+			</div>
+			<div class="container">
+				<h3 id="biography"><i class="fa-solid fa-calendar"></i> Biography</h3>
+				<ul>
+					<li>
+						2021-2025: PhD and graduate assistant at the
+						Department of Mathematical Sciences at New Mexico State
+						University.
+					</li>
+					<li>
+						2018-2020: Studied
+						<a href="https://msclogic.illc.uva.nl/"><i>Logic</i> (MSc)</a> 
+						at the
+						<a href="https://www.uva.nl/en">University of Amsterdam</a>.
+					</li>
+					<li>
+						2015-2018: Studied <i>Computing Science</i> (BSc) at the
+						University of Amsterdam.
+					</li>
+					<li>
+						1992: Born in Tübingen, Germany.
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3 id="publications"><i class="fa-solid fa-scroll"></i> Publications</h3>
+				<ul>
+					<div id="bibtex_display"></div>
+				</ul>
+			</div>
+			<div class="container">
+				<h3 id="talks"><i class="fa-solid fa-comments"></i> Talks</h3>
+				<h4>Tutorials</h4>
+				<ul>
+					<li>
+						<b>Priestley duality and its applications to pointfree topology</b>.
+						<i>MITAC'24</i>,
+						November 2024, Mexico City, Mexico.
+						(slides:
+							<a href="files/mitac2024_1.pdf">part 1</a>,
+							<a href="files/mitac2024_2.pdf">part 2</a>,
+							<a href="files/mitac2024_3.pdf">part 3</a>)
+					</li>
+				</ul>
+				<h4>Conference Talks</h4>
+				<ul>
+					<li>
+						<b>Local compactness does not always imply spatiality</b>.
+						<i>BLAST'25</i>,
+						May 2025, Boulder, Colorado, United States.
+						<a href="files/blast2025.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>The maximal spectrum of d-elements is not always Hausdorff</b>.
+						<i>TACL'24</i>,
+						July 2024, Barcelona, Spain.
+						<a href="files/tacl2024.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>When is <i>max(dL)</i> Hausdorff?</b>.
+						<i>BLAST'24</i>,
+						April 2024, Denton, Texas, United States.
+						<a href="files/blast2024.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Priestley duality for <i>d</i>-frames</b>.
+						<i>ITAC</i>
+						(El 56 Congreso de la Sociedad Matemática Mexicana),
+						October 2023, San Luis Potosí, Mexico (online).
+						<a href="files/smm2023.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Algebraic frames in Priestley duality</b>.
+						<i>BLAST'23</i>,
+						May 2023, Charlotte, North Carolina, United States. 
+						<a href="files/blast2023.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>How to derive well-known dualities in point-free topology from Priestley duality</b>.
+						<i>From Points to Neighborhoods and Beyond</i> (AMS Special Session), 
+						September 2022, El Paso, Texas, United States. 
+						<a href="files/ams2022.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Hofmann-Mislove through the lenses of Priestley</b>.
+						<i>TACL'22</i>,
+						June 2022, Coimbra, Portugal. 
+						<a href="files/tacl2022.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Canonical formulas for IK4</b>.
+						<i>BLAST'21</i>,
+						June 2021, Las Cruces, New Mexico, United States (online).
+						<a href="files/blast2021.pdf">(slides)</a>
+					</li>
+				</ul>
+				<h4>Seminar Talks</h4>
+				<ul>
+					<li>
+						<b>Priestley duality for frames</b>.
+						<i>Frame Theory Seminar</i>,
+						December 2024, Orange, California, United States.
+						<a href="files/orange2024.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Topics in Pointfree Topology: Duality Theorems</b>.
+						<i>Foundations Seminar</i>,
+						November 2022, Las Cruces, New Mexico, United States.
+					</li>
+					<li>
+						<b>Canonical Formulas for the Lax Logic</b>.
+						<i>TULIPS</i>,
+						March 2021, Utrecht, the Netherlands (online). 
+						<a href="files/tulips2021.pdf">(slides)</a>
+					</li>
+				</ul>
+				<h4>Defenses</h4>
+				<ul>
+					<li>
+						<b>Pointfree topology and Priestley duality</b>.
+						<i>PhD Mathematics</i>,
+						March 2025, Las Cruces, New Mexico, United States.
+						<a href="files/defense2025.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Lax and steads wins the race</b>.
+						<i>MSc Logic</i>,
+						December 2020, Amsterdam, the Netherlands (online). 
+						<a href="files/defense2020.pdf">(slides)</a>
+					</li>
+					<li>
+						<b>Thread-Oriented Program algebra</b>.
+						<i>BSc Computing Science</i>,
+						June 2018, Amsterdam, the Netherlands. 
+						<a href="files/defense2018.pdf">(slides)</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3 id="teaching"><i class="fa-solid fa-person-chalkboard"></i> Teaching</h3>
+				<h4>Lecturer</h4>
+				<ul><li>
+						Trigonometry and Pre-calculus,
+						New Mexico State University, Spring 2025.
+					</li>
+					<li>
+						College Algebra,
+						New Mexico State University, Fall 2024.
+					</li>
+					<li>
+						College Algebra,
+						New Mexico State University, Spring 2024.
+					</li>
+					<li>
+						College Algebra,
+						New Mexico State University, Fall 2023. (<a href="files/1220.pdf">Notes</a>)
+					</li>
+					<li>
+						College Algebra,
+						New Mexico State University, Spring 2023.
+					</li>
+					<li>
+						College Algebra,
+						New Mexico State University, Fall 2022.
+					</li>
+				</ul>
+				<h4>Teaching Assistant</h4>
+				<ul>
+					
+					<li>Introduction to Ordinary Differential Equations, New Mexico State University, Fall 2022.</li>
+					<li>Introduction to Real Analysis, New Mexico State University, Spring 2022.</li>
+					<li>Introduction to Higher Mathematics, New Mexico State University, Fall 2021.</li>
+					<li>Image Processing and Computer Vision, University of Amsterdam, Spring 2018.</li>
+					<li>Statistical Reasoning, University of Amsterdam, Spring 2018.</li>
+					<li>Discrete Mathematics and Logic, University of Amsterdam, Fall 2017. (Substitute)</li>
+					<li>Algorithms and Data Structures in Python, University of Amsterdam, Fall 2017.</li>
+				</ul>
+			</div>
+			</div>
+		</main>
+		<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"
+		></script>
+	</body>
+</html>

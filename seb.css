@@ -1,0 +1,28 @@
+:root,
+[data-bs-theme=light] {
+	--bs-primary: #8c0b42;
+	--bs-primary-rgb: 140, 11, 66;
+/*	--bs-body-bg: #8c0b42;*/
+	--seb-blue: #3F88C5;
+	--seb-orange: #FC7753;
+	--seb-purple: #7A3B69;
+	--seb-green: #5DD39E;
+}
+
+
+:root, 
+[data-bs-theme=dark] {
+	--bs-primary: #8c0b42;
+	--bs-primary-rgb: 140, 11, 66;
+	--bs-body-bg: #313628;
+	--seb-blue: #26567E;
+	--seb-orange: #A12502;
+	--seb-purple: #7A3B69;
+	--seb-green: #238056;
+}
+
+.container {
+	padding: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
