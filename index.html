@@ -4,52 +4,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Sebastian Melzer</title>
+		<meta name="description" content="Personal academic website of Sebastian Melzer, mathematician working on pointfree topology, duality theory, and related areas.">
+
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
 			crossorigin="anonymous"
-			>
-			<link href="seb.css" rel="stylesheet">
-			<bibtex src="pubs.bib"></bibtex>
-			<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"
-			></script>
-			<script src="https://kit.fontawesome.com/20423277f1.js" crossorigin="anonymous"></script>
-		</head>
-		<div class="bibtex_template" style="display: none;">
-			<li>
-				<span class="author"></span>.
-				<b><span class="title"></span></b>.
-				<span class="if journal">
-					<i><span class="journal"></span></i>,<span class="if volume"> <span class="volume"></span>(<span class="number"></span>)<span class="if pages">:<span class="pages"></span></span>,</span>
-				</span>
-				<span class="if school"><span class="school"></span>,
-			</span>
-			<span class="year"></span>.
-			<span class="if note"><span class="note"></span>.</span>
-			<a class="url">(view)</a>
-		</li>
-	</div>
+		>
+		<link href="seb.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/20423277f1.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
 	<body  data-bs-theme="light">
 		<main>
 			<div class="container">
 				<div class="row">
 					<div class="col-3">
-						<img class="img-thumbnail"src='images/seb.jpg' onmouseover="this.src='images/seb_simple.png';" onmouseout="this.src='images/seb.jpg';" />
+						<img 
+							class="img-thumbnail" 
+							src='images/seb.jpg'
+							onmouseover="this.src='images/seb_simple.png';"
+							onmouseout="this.src='images/seb.jpg';"
+						/>
 					</div>
 					<div class="col-9 align-self-center">
-						<h1>Sebastian Melzer</h1>
+						<h1>Sebastian D. Melzer</h1>
 						<h2>PhD Student</h2>
 						<p>
-							<a href="https://math.nmsu.edu/">
-								Department of Mathematical Sciences
-							</a>
+							<a href="https://math.nmsu.edu/">Department of Mathematical Sciences</a>
 							<br />
-							<a href="https://nmsu.edu/">
-								New Mexico State University
-							</a>
+							<a href="https://nmsu.edu/">New Mexico State University</a>
 						</p>
 					</div>
 				</div>
@@ -96,8 +82,62 @@
 			</div>
 			<div class="container">
 				<h3 id="publications"><i class="fa-solid fa-scroll"></i> Publications</h3>
+				<h4>Journal Papers</h4>
 				<ul>
-					<div id="bibtex_display"></div>
+					<li>
+						with Guram Bezhanishvili and Papiya Bhattacharjee.
+						<i>Maximal d-spectra via Priestley duality</i>.
+						<b>arXiv Preprint</b>,
+						2025.
+						<a href="https://arxiv.org/pdf/2501.07673">(view)</a>
+					</li>
+					<li>
+						with Guram Bezhanishvili.
+						<i>Algebraic frames in Priestley duality</i>.
+						<b>Algebra Universalis</b>,
+						81(1):25,
+						2025.
+						<a href="documents/Algebraic Frames in Priestley duality.pdf">(view)</a>
+					</li>
+					<li>
+						with Guram Bezhanishvili.
+						<i>Deriving dualities in pointfree topology from Priestley duality</i>.
+						<b>Appl. Categ. Structures</b>,
+						31(5):28,
+						2023.
+						<a href="documents/Deriving Dualities in Pointfree Topology from Priestley Duality.pdf">(view)</a>
+					</li>
+					<li>
+						with Guram Bezhanishvili.
+						<i>Hofmann-Mislove through the lenses of Priestley</i>.
+						<b>Semigroup Forum</b>,
+						105(3):825-833,
+						2022.
+						<a href="documents/Hofmann-Mislove through the lenses of Priestley.pdf">(view)</a>
+					</li>
+				</ul>
+				<h4>Theses</h4>
+				<ul>
+					<li>
+						<i>Pointfree topology and Priestley duality</i>.
+						<b>New Mexico State University</b>,
+						2025.
+						PhD Thesis.
+					</li>
+					<li>
+						<i>Canonical Formulas for the Lax Logic</i>.
+						<b>University of Amsterdam</b>,
+						2020.
+						MSc. Thesis
+						<a href="documents/mscthesis.pdf">(view)</a>
+					</li>
+					<li>
+						<i>Thread-oriented program algebra</i>.
+						<b>University of Amsterdam</b>,
+						2018.
+						BSc. Thesis
+						<a href="documents/bscthesis.pdf">(view)</a>
+					</li>
 				</ul>
 			</div>
 			<div class="container">
@@ -238,7 +278,6 @@
 				</ul>
 				<h4>Teaching Assistant</h4>
 				<ul>
-					
 					<li>Introduction to Ordinary Differential Equations, New Mexico State University, Fall 2022.</li>
 					<li>Introduction to Real Analysis, New Mexico State University, Spring 2022.</li>
 					<li>Introduction to Higher Mathematics, New Mexico State University, Fall 2021.</li>
@@ -251,9 +290,12 @@
 			</div>
 		</main>
 		<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-		crossorigin="anonymous"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
 		></script>
+		<script>
+  			AOS.init();
+  		</script>
 	</body>
 </html>
