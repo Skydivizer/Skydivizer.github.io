@@ -18,10 +18,44 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 	<body  data-bs-theme="light">
-		<main>
+		<nav class="navbar  navbar-expand-md navbar-light bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Sebastian D. Melzer</a>
+				<button 
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#aboutme">About me</a>
+				        </li>
+				        <li class="nav-item">
+							<a class="nav-link" href="#biography">Biography</a>
+				        </li>
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#publications">Publications</a>
+				        </li>
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#talks">Talks</a>
+				        </li>
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#teaching">Teaching</a>
+				        </li>
+      				</ul>
+    			</div>
+			</div>
+    	</nav>
 			<div class="container">
-				<div class="row">
-					<div class="col-3">
+				<div class="row min-vh-hero align-items-center text-center justify-content-center">
+					<div class="col-sm-auto align-self-center" data-aos="flip-right" data-aos-duration="1000">
 						<img 
 							class="img-thumbnail" 
 							src='images/seb.jpg'
@@ -29,69 +63,95 @@
 							onmouseout="this.src='images/seb.jpg';"
 						/>
 					</div>
-					<div class="col-9 align-self-center">
-						<h1>Sebastian D. Melzer</h1>
-						<h2>PhD Student</h2>
+					<div class="col-sm-auto align-self-center">
+						<h1 data-aos="fade-down" data-aos-delay="300" data-aos-anchor="html">Sebastian D. Melzer</h1>
+						<h2 data-aos="fade-up" data-aos-delay="600" data-aos-anchor="html" >Postdoctoral researcher</h2>
+						
 						<p>
-							<a href="https://math.nmsu.edu/">Department of Mathematical Sciences</a>
-							<br />
-							<a href="https://nmsu.edu/">New Mexico State University</a>
+							<!-- <a href="https://math.nmsu.edu/">Department of Mathematical Sciences</a> -->
+							<!-- <br /> -->
+							<!-- <a href="https://nmsu.edu/">New Mexico State University</a> -->
 						</p>
+					</div>
+					<div class="text-center" data-aos-anchor="#html" data-aos-delay="2000" data-aos="zoom-in">
+						<a type="button" class="btn btn-light" href="#aboutme"><i class="fa-solid fa-chevron-down"></i></a>
 					</div>
 				</div>
 			</div>
-			<div class="content">
 			<div class="container">
-				<h3 id="aboutme"><span class="fa-solid fa-address-card"></span> About Me</h3>
-				<p>
-					I was born in Germany, and at 8 years old, I made the involuntary decision to move to the 
-					Netherlands for a change of scenery. After completing a bachelor’s in Computing Science and a 
-					master’s in Logic at the University of Amsterdam, I ventured further afield to pursue a PhD in 
-					Mathematics in Las Cruces, New Mexico. My research focuses on Priestley duality and pointfree 
-					topology, and I’m passionate about exploring the interactions between different branches of 
-					mathematics. I plan to continue in academia as a postdoctoral researcher after finishing my degree.
-				</p>
-				<p>
-					I’ve always loved rain and cool weather, so New Mexico’s arid climate might not have been the most 
-					logical choice, but it’s been an adventure. Outside of mathematics, I enjoy unwinding with video 
-					games, bad reality TV, or sports. I can never say no to chocolate-covered peanuts or a good beer.
-				</p>
+				<a class="anchor" id="aboutme"></a>
+				<div class="row min-vh-hero align-items-center">
+					<div class="text-center" data-aos-anchor="#aboutme" data-aos-delay="1000" data-aos="zoom-in">
+						<a type="button" class="btn btn-dark" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+					</div>
+					<div>
+					<h3 id="aboutme" data-aos="flip-up" data-aos-anchor="#aboutme">
+						<span class="fa-solid fa-address-card"></span> About Me
+					</h3>
+					<p data-aos="fade-left" data-aos-anchor="#aboutme" data-aos-delay="100">
+					    I am a mathematician originally from Germany, raised in the Netherlands. I completed a BSc in Computing Science and an MSc in Logic at the University of Amsterdam, followed by a PhD in Mathematics at New Mexico State University. My research lies at the intersection of pointfree topology, and duality theory with a focus on Priestley duality and its applications.
+					</p>
+					<p data-aos="fade-left" data-aos-anchor="#aboutme" data-aos-delay="200">
+					    I am broadly interested in the interplay between different areas of mathematics and plan to continue this work as a postdoctoral researcher. Outside of academia, I enjoy video games, sports, and the occasional bad reality show. I also have a weakness for chocolate-covered peanuts and a cold beer.
+					</p>
+					</div>
+					<div class="text-center" data-aos-anchor="#aboutme" data-aos-delay="1000" data-aos="zoom-in">
+						<a type="button" class="btn btn-dark" href="#biography"><i class="fa-solid fa-chevron-down"></i></a>
+					</div>
+				</div>
 			</div>
 			<div class="container">
-				<h3 id="biography"><i class="fa-solid fa-calendar"></i> Biography</h3>
+				<a class="anchor" id="biography"></a>
+				<div class="row min-vh-hero align-items-center">
+				<div class="text-center" data-aos-anchor="#biography" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#aboutme"><i class="fa-solid fa-chevron-up"></i></a>
+				</div>
+				<div>
+				<h3 data-aos="flip-up"><i class="fa-solid fa-calendar"></i> Biography</h3>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#biography" data-aos-delay="100">
 						2021-2025: PhD and graduate assistant at the
 						Department of Mathematical Sciences at New Mexico State
 						University.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#biography" data-aos-delay="200">
 						2018-2020: Studied
 						<a href="https://msclogic.illc.uva.nl/"><i>Logic</i> (MSc)</a> 
 						at the
 						<a href="https://www.uva.nl/en">University of Amsterdam</a>.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#biography" data-aos-delay="300">
 						2015-2018: Studied <i>Computing Science</i> (BSc) at the
 						University of Amsterdam.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#biography" data-aos-delay="400">
 						1992: Born in Tübingen, Germany.
 					</li>
 				</ul>
+				</div>
+				<div class="text-center" data-aos-anchor="#biography" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#publications"><i class="fa-solid fa-chevron-down"></i></a>
+				</div>
+				</div>
 			</div>
 			<div class="container">
-				<h3 id="publications"><i class="fa-solid fa-scroll"></i> Publications</h3>
-				<h4>Journal Papers</h4>
+				<a class="anchor" id="publications"></a>
+				<div class="row min-vh-hero align-items-center">
+				<div class="text-center" data-aos-anchor="#publications" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#biography"><i class="fa-solid fa-chevron-up"></i></a>
+				</div>
+				<div>
+				<h3 data-aos="flip-up"><i class="fa-solid fa-scroll"></i> Publications</h3>
+				<h4 data-aos="flip-down" data-aos-anchor="#publications" data-aos-delay="100">Journal Papers</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="200">
 						with Guram Bezhanishvili and Papiya Bhattacharjee.
 						<i>Maximal d-spectra via Priestley duality</i>.
 						<b>arXiv Preprint</b>,
 						2025.
 						<a href="https://arxiv.org/pdf/2501.07673">(view)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="300">
 						with Guram Bezhanishvili.
 						<i>Algebraic frames in Priestley duality</i>.
 						<b>Algebra Universalis</b>,
@@ -99,7 +159,7 @@
 						2025.
 						<a href="documents/Algebraic Frames in Priestley duality.pdf">(view)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="400">
 						with Guram Bezhanishvili.
 						<i>Deriving dualities in pointfree topology from Priestley duality</i>.
 						<b>Appl. Categ. Structures</b>,
@@ -107,7 +167,7 @@
 						2023.
 						<a href="documents/Deriving Dualities in Pointfree Topology from Priestley Duality.pdf">(view)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="500">
 						with Guram Bezhanishvili.
 						<i>Hofmann-Mislove through the lenses of Priestley</i>.
 						<b>Semigroup Forum</b>,
@@ -116,35 +176,46 @@
 						<a href="documents/Hofmann-Mislove through the lenses of Priestley.pdf">(view)</a>
 					</li>
 				</ul>
-				<h4>Theses</h4>
+				<h4 data-aos="flip-down" data-aos-anchor="#publications" data-aos-delay="700">Theses</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="800">
 						<i>Pointfree topology and Priestley duality</i>.
 						<b>New Mexico State University</b>,
 						2025.
 						PhD Thesis.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="900">
 						<i>Canonical Formulas for the Lax Logic</i>.
 						<b>University of Amsterdam</b>,
 						2020.
-						MSc. Thesis
+						MSc Thesis.
 						<a href="documents/mscthesis.pdf">(view)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#publications" data-aos-delay="1000">
 						<i>Thread-oriented program algebra</i>.
 						<b>University of Amsterdam</b>,
 						2018.
-						BSc. Thesis
+						BSc Thesis.
 						<a href="documents/bscthesis.pdf">(view)</a>
 					</li>
 				</ul>
+				</div>
+				<div class="text-center" data-aos-anchor="#publications" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#talks"><i class="fa-solid fa-chevron-down"></i></a>
+				</div>
+				</div>
 			</div>
 			<div class="container">
-				<h3 id="talks"><i class="fa-solid fa-comments"></i> Talks</h3>
-				<h4>Tutorials</h4>
+				<a class="anchor" id="talks"></a>
+				<div class="row min-vh-hero align-items-center">
+				<div class="text-center" data-aos-anchor="#talks" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#publications"><i class="fa-solid fa-chevron-up"></i></a>
+				</div>
+				<div>
+				<h3 data-aos="flip-up"><i class="fa-solid fa-comments"></i> Talks</h3>
+				<h4 data-aos="flip-down" data-aos-delay="100" data-aos-anchor="#talks">Tutorials</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#talks">
 						<b>Priestley duality and its applications to pointfree topology</b>.
 						<i>MITAC'24</i>,
 						November 2024, Mexico City, Mexico.
@@ -154,148 +225,179 @@
 							<a href="documents/mitac2024_3.pdf">part 3</a>)
 					</li>
 				</ul>
-				<h4>Conference Talks</h4>
+				<h4 data-aos="flip-down" data-aos-delay="250" data-aos-anchor="#talks">Conference Talks</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#talks">
 						<b>Local compactness does not always imply spatiality</b>.
 						<i>BLAST'25</i>,
 						May 2025, Boulder, Colorado, United States.
 						<a href="documents/blast2025.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="350" data-aos-anchor="#talks">
 						<b>The maximal spectrum of d-elements is not always Hausdorff</b>.
 						<i>TACL'24</i>,
 						July 2024, Barcelona, Spain.
 						<a href="documents/tacl2024.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#talks">
 						<b>When is <i>max(dL)</i> Hausdorff?</b>.
 						<i>BLAST'24</i>,
 						April 2024, Denton, Texas, United States.
 						<a href="documents/blast2024.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="450" data-aos-anchor="#talks">
 						<b>Priestley duality for <i>d</i>-frames</b>.
 						<i>ITAC</i>
 						(El 56 Congreso de la Sociedad Matemática Mexicana),
 						October 2023, San Luis Potosí, Mexico (online).
 						<a href="documents/smm2023.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-anchor="#talks">
 						<b>Algebraic frames in Priestley duality</b>.
 						<i>BLAST'23</i>,
 						May 2023, Charlotte, North Carolina, United States. 
 						<a href="documents/blast2023.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="550" data-aos-anchor="#talks">
 						<b>How to derive well-known dualities in point-free topology from Priestley duality</b>.
 						<i>From Points to Neighborhoods and Beyond</i> (AMS Special Session), 
 						September 2022, El Paso, Texas, United States. 
 						<a href="documents/ams2022.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="600" data-aos-anchor="#talks">
 						<b>Hofmann-Mislove through the lenses of Priestley</b>.
 						<i>TACL'22</i>,
 						June 2022, Coimbra, Portugal. 
 						<a href="documents/tacl2022.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="650" data-aos-anchor="#talks">
 						<b>Canonical formulas for IK4</b>.
 						<i>BLAST'21</i>,
 						June 2021, Las Cruces, New Mexico, United States (online).
 						<a href="documents/blast2021.pdf">(slides)</a>
 					</li>
 				</ul>
-				<h4>Seminar Talks</h4>
+				<h4 data-aos="flip-down" data-aos-delay="750" data-aos-anchor="#talks">Seminar Talks</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#talks">
 						<b>Priestley duality for frames</b>.
 						<i>Frame Theory Seminar</i>,
 						December 2024, Orange, California, United States.
 						<a href="documents/orange2024.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="850" data-aos-anchor="#talks">
 						<b>Topics in Pointfree Topology: Duality Theorems</b>.
 						<i>Foundations Seminar</i>,
 						November 2022, Las Cruces, New Mexico, United States.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="900" data-aos-anchor="#talks">
 						<b>Canonical Formulas for the Lax Logic</b>.
 						<i>TULIPS</i>,
 						March 2021, Utrecht, the Netherlands (online). 
 						<a href="documents/tulips2021.pdf">(slides)</a>
 					</li>
 				</ul>
-				<h4>Defenses</h4>
+				<h4 data-aos="flip-down" data-aos-delay="1000" data-aos-anchor="#talks">Defenses</h4>
 				<ul>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="1050" data-aos-anchor="#talks">
 						<b>Pointfree topology and Priestley duality</b>.
 						<i>PhD Mathematics</i>,
 						March 2025, Las Cruces, New Mexico, United States.
 						<a href="documents/defense2025.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="1100" data-aos-anchor="#talks">
 						<b>Lax and steads wins the race</b>.
 						<i>MSc Logic</i>,
 						December 2020, Amsterdam, the Netherlands (online). 
 						<a href="documents/defense2020.pdf">(slides)</a>
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-delay="1150" data-aos-anchor="#talks">
 						<b>Thread-Oriented Program algebra</b>.
 						<i>BSc Computing Science</i>,
 						June 2018, Amsterdam, the Netherlands. 
 						<a href="documents/defense2018.pdf">(slides)</a>
 					</li>
 				</ul>
+				</div>
+				<div class="text-center" data-aos-anchor="#talks" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#teaching"><i class="fa-solid fa-chevron-down"></i></a>
+				</div>
+				</div>
 			</div>
 			<div class="container">
-				<h3 id="teaching"><i class="fa-solid fa-person-chalkboard"></i> Teaching</h3>
-				<h4>Lecturer</h4>
-				<ul><li>
+				<a class="anchor" id="teaching"></a>
+				<div class="row min-vh-hero align-items-center">
+				<div class="text-center" data-aos-anchor="#teaching" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#talks"><i class="fa-solid fa-chevron-up"></i></a>
+				</div>
+				<div>
+				<h3 data-aos="flip-down" data-aos-anchor="#teaching">
+					<i class="fa-solid fa-person-chalkboard"></i> Teaching
+				</h3>
+				<h4 data-aos="flip-up" data-aos-anchor="#teaching" data-aos-delay="100">Lecturer</h4>
+				<ul>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="150">
 						Trigonometry and Pre-calculus,
 						New Mexico State University, Spring 2025.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="200">
 						College Algebra,
 						New Mexico State University, Fall 2024.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="250">
 						College Algebra,
 						New Mexico State University, Spring 2024.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="300">
 						College Algebra,
 						New Mexico State University, Fall 2023. (<a href="documents/1220.pdf">Notes</a>)
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="350">
 						College Algebra,
 						New Mexico State University, Spring 2023.
 					</li>
-					<li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="400">
 						College Algebra,
 						New Mexico State University, Fall 2022.
 					</li>
 				</ul>
-				<h4>Teaching Assistant</h4>
+				<h4 data-aos="flip-up" data-aos-anchor="#teaching" data-aos-delay="500">Teaching Assistant</h4>
 				<ul>
-					<li>Introduction to Ordinary Differential Equations, New Mexico State University, Fall 2022.</li>
-					<li>Introduction to Real Analysis, New Mexico State University, Spring 2022.</li>
-					<li>Introduction to Higher Mathematics, New Mexico State University, Fall 2021.</li>
-					<li>Image Processing and Computer Vision, University of Amsterdam, Spring 2018.</li>
-					<li>Statistical Reasoning, University of Amsterdam, Spring 2018.</li>
-					<li>Discrete Mathematics and Logic, University of Amsterdam, Fall 2017. (Substitute)</li>
-					<li>Algorithms and Data Structures in Python, University of Amsterdam, Fall 2017.</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="550">
+						Introduction to Ordinary Differential Equations, New Mexico State University, Fall 2022.
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="600">
+						Introduction to Real Analysis, New Mexico State University, Spring 2022.
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="650">
+						Introduction to Higher Mathematics, New Mexico State University, Fall 2021.
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="700">
+						Image Processing and Computer Vision, University of Amsterdam, Spring 2018.
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="750">
+						Statistical Reasoning, University of Amsterdam, Spring 2018.
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="800">
+						Discrete Mathematics and Logic, University of Amsterdam, Fall 2017. (Substitute)
+					</li>
+					<li data-aos="fade-up" data-aos-anchor="#teaching" data-aos-delay="850">
+						Algorithms and Data Structures in Python, University of Amsterdam, Fall 2017.
+					</li>
 				</ul>
+				</div>
+				<div class="text-center" data-aos-anchor="#teaching" data-aos-delay="2000" data-aos="zoom-in">
+					<a type="button" class="btn btn-dark" href="#"><i class="fa-solid fa-angles-up"></i></a>
+				</div>
+				</div>
 			</div>
-			</div>
-		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 		></script>
 		<script>
-  			AOS.init();
+  			AOS.init({once: true});
   		</script>
 	</body>
 </html>
