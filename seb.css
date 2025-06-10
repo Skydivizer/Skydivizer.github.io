@@ -12,9 +12,11 @@ html {
 	margin-bottom: 25px;
 }
 
-a.anchor {
-	top: -56px;
-	display: block;
+.anchor {
+	padding-top: 56px;
+}
+
+.scrollspy-example: {
 	position: relative;
-	visibility: hidden;
+	overflow-y: scroll;
 }
